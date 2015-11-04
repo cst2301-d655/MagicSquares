@@ -15,7 +15,7 @@ public class Square {
 
 	private File file;
 
-	List<int[]> rowList = new ArrayList<>();
+	private List<int[]> rowList = new ArrayList<>();
 
 	public Square(File file) throws FileNotFoundException {
 		// store the file name.
