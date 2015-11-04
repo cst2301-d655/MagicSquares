@@ -10,21 +10,21 @@ import java.io.FileNotFoundException;
 public class MagicSquares {
 
 	public static void main(String[] args) throws FileNotFoundException {
-        //list of file names to process.
+		//list of file names to process.
 		String[] fileNameList = new String[] { "Mercury.txt", "Luna.txt", "Test.txt", "Test2.txt", "Test3.txt" };
 
-        //for each file.
+		//for each file.
 		for (String fileName : fileNameList) {
-            //create a file representation.
+			//create a file representation.
 			File file = new File(fileName);
 
-            //create a square from that file representatin.
+			//create a square from that file representatin.
 			Square square = new Square(file);
 
-            //find out if the square is "magic."
+			//find out if the square is "magic."
 			boolean magic = square.isMagic();
 
-            //output the result.
+			//output the result.
 			System.out.println(square.getFile().getName() + " is " + (magic ? "" : "not ") + "magic.");
 		}
 	}
