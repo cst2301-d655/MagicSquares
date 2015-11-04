@@ -144,5 +144,4 @@ public class Square {
 	public File getFile() {
 		return this.file;
 	}
-
 }
